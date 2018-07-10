@@ -1,0 +1,35 @@
+<div class="login-section">
+  <div class="container">
+      <div class="form-box card card-login" id="login-box">
+        <div><!--Welcome to BI Discovery-->
+          <img src="./assets/images/brandideaAnalytics_logo.png" alt="BrandIdea Analytics">
+        </div>
+          <form id="login-form" (ngsubmit)="loginUser($event)">
+          <div class="body">
+            <!--<p>Please fill out the following fields to login:</p>-->
+            <div class="form-group field-loginform-username required">
+                <input  class="form-control"  placeholder="Enter Usename" type="text">
+
+                <div class="help-block"></div>
+            </div>						
+            <div class="form-group field-loginform-password required">
+                    <input class="form-control"  placeholder="Enter Password" type="password">
+                    <div class="help-block"></div>
+            </div>						
+                      <div class="form-group field-loginform-rememberme">
+
+                        <input name="LoginForm[rememberMe]" value="0" type="hidden"><label>
+                        <input id="loginform-rememberme" class="" name="LoginForm[rememberMe]" value="1" checked="" type="checkbox"> Remember Me</label>
+
+                        <div class="help-block"></div>
+                    </div>					
+                  </div>
+          <div class="footer">
+
+            <input type="button" class="btn bg-olive btn-block" name="login-button" value="Login">
+            <a class="forgot-password" href="/biweb9/web/index.php?r=site%2Frequest-password-reset">Forgot My Password</a>						<a class="create-account" href="/biweb9/web/index.php?r=site%2Frequest-password-reset">Create Account</a>
+          </div>
+          </form>				
+      </div>
+    </div>
+</div>
