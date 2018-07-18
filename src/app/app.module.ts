@@ -10,6 +10,7 @@ import { MapComponent } from './services/map/map.component';
 import { ChartComponent } from './services/chart/chart.component';
 import { GridtableComponent } from './services/report/gridtable.component';
 import { ServicesComponent } from './services/services.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ServicesComponent } from './services/services.component';
     MapComponent,
     ChartComponent,
     GridtableComponent,
-    ServicesComponent
+    ServicesComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,
@@ -33,8 +35,4 @@ import { ServicesComponent } from './services/services.component';
 })
 export class AppModule { }
 
-const appRoutes: routes = [
-  { path: 'login', component: LoginComponent },
-  { path: 'services',      component: ServicesComponent },
-  
-];
+

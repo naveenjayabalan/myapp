@@ -1,3 +1,99 @@
-<nav>
-  <a routerLink="/login">Heroes</a>
-</nav>
+<div class="col-md-2" id="sidebar">
+		<div class="mCustomScrollBox mCS-dark-thick mCSB_vertical mCSB_inside" id="mCSB_6" style="max-height: none;" tabindex="0">
+			<div class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" dir="ltr" id="mCSB_6_container" style="position:relative; top:0; left:0;">
+				<aside class="left-side sidebar-offcanvas">
+					<section class="sidebar">
+						<nav class="navbar period-calendar">
+							<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a class="dropdown-toggle select-period" data-toggle="dropdown" href="#" title="Select Period"><i class="fa fa-calendar selbox"></i></a>
+								</li>
+							</ul>
+						</nav>
+						<p id="currentval">2017</p><!-- <hr style="background-color: #fff; border-top: 2px dashed #8c8b8b;"> -->
+						
+							<button id="toggle-Period" style="display:none; font-weight: bold; color:blue; font-size: 12px;">Period Selection</button>
+						<div class="fliter-area" id="filter-area1">
+							<div id="myTabs">
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs" role="tablist">
+									<li class="active" id="252819" role="presentation">
+										<a aria-controls="Discovery" data-toggle="tab" href="#Discovery" role="tab">Discovery</a>
+									</li>
+									<li id="259473" role="presentation">
+										<a aria-controls="Prescriptn" data-toggle="tab" href="#Prescriptn" role="tab">Prescriptn</a>
+									</li>
+									<li id="259474" role="presentation">
+										<a aria-controls="Diagnostics" data-toggle="tab" href="#Diagnostics" role="tab">Diagnostics</a>
+									</li>
+									<li id="259475" role="presentation">
+										<a aria-controls="Predictn" data-toggle="tab" href="#Predictn" role="tab">Predictn</a>
+									</li>
+								</ul><!-- First Tab-->
+								<div class="tab-content">
+									<!--End-->
+									<!-- Tab panes -->
+									<div class="tab-pane fade in active" id="Discovery" role="tabpanel">
+										<div class="tree well">
+											
+										</div>
+									</div>
+									<div class="tab-pane fade" id="Prescriptn" role="tabpanel">
+										<div class="tree well ">
+											
+										</div>
+									</div>
+									<div class="tab-pane fade" id="Diagnostics" role="tabpanel">
+										<div class="tree well">
+											
+										</div>
+									</div>
+									<div class="tab-pane fade" id="Predictn" role="tabpanel">
+										<div class="tree well ">
+											
+													<ul id="child"></ul>
+												
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="com_split">
+								<span class="combine" data-toggle="collapse" id="combine"><img alt="combine" class="mCS_img_loaded" src="assets/images/combine.png" width="16px">Combine</span> <span class="split" data-toggle="collapse" id="split"><img alt="split" class="mCS_img_loaded" src="assets/images/split.png" width="16px">Split</span>
+							</div><input id="myAnchor" type="hidden">
+						</div>
+						<div class="selection-area">
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs selection-ul" role="tablist">
+								<li class="active" role="presentation">
+									<a aria-controls="home" data-toggle="tab" href="#myselection" role="tab">My Selection</a>
+								</li>
+								<li role="presentation">
+									<a aria-controls="profile" data-toggle="tab" href="#postselection" role="tab">Post Selection</a>
+								</li>
+							</ul><!-- Tab panes -->
+							<div class="tab-content">
+								<div class="tab-pane active" id="myselection" role="tabpanel">
+								
+											<div class="col-md-12 pad-0">
+												<ul>
+													<!-- <li>FMCG</li>
+              <li id = 'modname'>Brand Ideator</li> -->
+													<li class="selection-list" id="selectedlist"></li>
+												</ul>
+											</div>
+									
+								</div>
+								<div class="tab-pane my-scroll" id="postselection" role="tabpanel">
+									...
+								</div>
+							</div>
+							<div id="jstreeSplit" ></div>
+							<div id="jstreeCombine" ></div>
+						</div><!-- Split Details show here!-->
+						<div class="selection-area"></div>
+					</section>
+				</aside>
+			</div>
+		
+		</div>
+	</div>

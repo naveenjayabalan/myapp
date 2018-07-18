@@ -1,3 +1,75 @@
-<app-chart></app-chart>
-<app-map></app-map>
-<app-gridtable></app-gridtable>
+<app-header></app-header>
+<div class="wrapper row-offcanvas row-offcanvas-left">
+    <app-menu></app-menu>
+        <div id="content" class="col-md-10">
+                <div class="header-bottom">
+
+                        <div class="dropdown currency">
+                          <a class="btn btn-default dropdown-toggle dig-button" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" title="Units Convertion">
+                          
+                              <img src="assets/images/units.svg" width="20px" height="20px">
+                           
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <li><a class="currency-conv" data-value="11" href="#">INR-Indian Rupee</a></li>
+                            <li><a class="currency-conv" data-value="12" href="#">USD-U.S Dollar</a></li>
+                            <li><a class="currency-conv" data-value="13" href="#">EUR-Euro</a></li>
+                            <li><a class="currency-conv" data-value="14" href="#">GBP-British Pound</a></li>
+                            <li><a class="currency-conv" data-value="15" href="#">JPY-Japanese Yen</a></li>
+                            <li><a class="currency-conv" data-value="16" href="#">CNY-Chinese Yuan</a></li>
+                          </ul>
+                        </div>
+                        <div class="dropdown digits">
+                          <a class="btn btn-default dropdown-toggle dig-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" title="Units Convertion">
+                           
+                            <i class="fa fa-retweet" aria-hidden="true"></i>
+                           
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a class="reading-conv" data-value="4" href="#">Hundreds.</a></li>
+                            <li><a class="reading-conv" data-value="1" href="#">Crs.</a></li>
+                            <li><a class="reading-conv" data-value="2" href="#">lacs.</a></li>
+                            <li><a class="reading-conv" data-value="3" href="#">Thousands</a></li>
+                          </ul>
+                        </div>
+                        
+           <ul class="nav navbar-nav pull-right">
+        
+                  <li class="dropdown user user-menu">
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                       <i class="glyphicon glyphicon-user"></i>
+                       <span>BI Administrator               <i class="caret"></i>
+                <!-- <span style="padding-left:16%;font-size:11px;"></span> -->
+                       </span>
+                   </a>
+                   <ul class="dropdown-menu">
+                       <!-- User image -->
+                       <li class="user-header bg-light-blue">
+                 <img src="assets/images/user.png" class="img-circle" alt="User Image">
+                 <!-- <img src="" class="img-circle" alt="User Image"/> -->
+        
+                           <p> BI Administrator - Admin                                              <small>Member since December 5, 2015</small>
+                           </p>
+                       </li>
+                       <!-- Menu Body -->
+                       <li class="user-body">
+        
+                       </li>
+                       <!-- Menu Footer-->
+                       <li class="user-footer">
+                           <!--<div class="pull-left profile">
+                               <a class="btn btn-default btn-flat">Profile</a>
+                           </div>-->
+        
+                           <div class="pull-center">
+                               <a id="logout" class="btn btn-success" href="/biapp/web/index.php?r=site%2Flogout" data-method="post">Sign out</a>                   </div>
+                       </li>
+                   </ul>
+               </li>   <!-- User Account: style can be found in dropdown.less -->
+              </ul>
+            </div>
+            <app-chart></app-chart>
+            <app-map></app-map>
+            <app-gridtable></app-gridtable>
+        </div>
+</div>
