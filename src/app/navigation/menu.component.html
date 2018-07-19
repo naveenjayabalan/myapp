@@ -5,11 +5,14 @@
 					<section class="sidebar">
 						<nav class="navbar period-calendar">
 							<ul class="nav navbar-nav">
-								<li class="dropdown">
-									<a class="dropdown-toggle select-period" data-toggle="dropdown" href="#" title="Select Period"><i class="fa fa-calendar selbox"></i></a>
+								<li class="dropdown" dropdown>
+									<a dropdownToggle role="button"  class="select-period" data-toggle="dropdown" title="Select Period"><i class="fa fa-calendar selbox"></i></a>
 								</li>
 							</ul>
 						</nav>
+
+						
+
 						<p id="currentval">2017</p><!-- <hr style="background-color: #fff; border-top: 2px dashed #8c8b8b;"> -->
 						
 							<button id="toggle-Period" style="display:none; font-weight: bold; color:blue; font-size: 12px;">Period Selection</button>
@@ -97,3 +100,76 @@
 		
 		</div>
 	</div>
+
+
+
+	<div *dropdownMenu class="period-selection" data-animations="fadeIn">
+			<h3>Period Selection</h3>
+			<li><div id="popover-content" class="">
+			  <form class="form-inline" role="form">
+				<div class="form-group">
+					<div class="col-md-12 form-row">
+					  <div class="form-check ">
+						  <span class="period-title col-md-2">Period Type</span>
+					  </div>
+		  <div class="form-check" id="div1">
+			<label>
+		  <input name="periodtype" id="1" value="1" class="Single " type="radio"> <span class="label-text">Single </span>
+		  </label>
+		  <label>
+		  <input name="periodtype" id="2" value="2" class="Continuous " type="radio"> <span class="label-text">Continuous </span>
+		  </label>
+		  <label>
+		  <input name="periodtype" id="3" value="3" class="Mixed " type="radio"> <span class="label-text">Mixed </span>
+		  </label>
+		  </div>
+					</div>
+				  <div class="col-md-12 form-row" id="cont" style="display: none;">
+					  <div class="form-check">
+						  <span class="period-title col-md-2">Periodicity</span>
+					  </div>
+		  <div class="form-check" id="div1b">
+			<label>
+		  <input name="period" id="2" value="2" type="radio"> <span class="label-text  By_Cal_Yr">By Cal Yr</span>
+		  </label>
+		  <label>
+		  <input name="period" id="6" value="6" type="radio"> <span class="label-text  By_Qrtr">By Qrtr</span>
+		  </label>
+		  <label>
+		  <input name="period" id="4" value="4" type="radio"> <span class="label-text  By_Month">By Month</span>
+		  </label>
+		  </div>
+		  
+		  </div>
+					<div class="col-md-12 form-row" id="3d">
+					  <div class="form-check">
+						  <span class="period-title col-md-2">Select Period <br></span>
+					  </div>
+						  <div class="form-check custome-check" id="div3"></div>
+						  <div class="form-check" id="div31"></div>
+						  <div class="form-check">
+							<div class="single_period"><input name="birthday" placeholder="Select Period" id="pselection" type="text"></div>
+							<div class="continuous_period"></div>
+		  
+		  
+						  </div>
+					</div>
+		  
+					 <div class="col-md-12" id="4d">
+					  <div class="form-check">
+						<!--   <span class="period-title col-md-2">Parameter</span>-->
+					  </div>
+					  <!-- <div class="form-check col-md-2" ></div> -->
+					   <div class="form-check col-md-12" id="div4"></div>
+				  </div>
+				  
+				  <div class="period-submin">
+					<button class="apply" id="dlDropDown" type="button">Apply</button>
+					<!-- type="submit" -->
+					<a href="javascript:void(0);" class="close" type="submit">Close</a>
+				  </div>
+				</div>
+			  </form>
+			</div>
+			</li>
+		  </div>
