@@ -523,6 +523,13 @@
        padding: 0;
        border: none;
        left: 0.4%;
+       position: absolute;
+       z-index: 9;
+       display: none;
+   }
+   .period-selection li
+   {
+     list-style: none;
    }
    ::after, ::before {
        -webkit-box-sizing: border-box;
