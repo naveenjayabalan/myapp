@@ -14,6 +14,7 @@ import { ChartComponent } from './services/chart/chart.component';
 import { GridtableComponent } from './services/report/gridtable.component';
 import { ServicesComponent } from './services/services.component';
 import { AgmCoreModule } from '@agm/core';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -38,7 +39,8 @@ import { AgmCoreModule } from '@agm/core';
     }),
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

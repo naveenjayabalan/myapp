@@ -1,6 +1,4 @@
 <div class="col-md-2" id="sidebar">
-		<div class="mCustomScrollBox mCS-dark-thick mCSB_vertical mCSB_inside" id="mCSB_6" style="max-height: none;" tabindex="0">
-			<div class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" dir="ltr" id="mCSB_6_container" style="position:relative; top:0; left:0;">
 				<aside class="left-side sidebar-offcanvas">
 					<section class="sidebar">
 						<nav class="navbar period-calendar">
@@ -18,47 +16,29 @@
 							<button id="toggle-Period" style="display:none; font-weight: bold; color:blue; font-size: 12px;">Period Selection</button>
 						<div class="fliter-area" id="filter-area1">
 							<div id="myTabs">
-								<!-- Nav tabs -->
-								<ul class="nav nav-tabs" role="tablist">
-									<li class="active" id="252819" role="presentation">
-										<a aria-controls="Discovery" data-toggle="tab" href="#Discovery" role="tab">Discovery</a>
-									</li>
-									<li id="259473" role="presentation">
-										<a aria-controls="Prescriptn" data-toggle="tab" href="#Prescriptn" role="tab">Prescriptn</a>
-									</li>
-									<li id="259474" role="presentation">
-										<a aria-controls="Diagnostics" data-toggle="tab" href="#Diagnostics" role="tab">Diagnostics</a>
-									</li>
-									<li id="259475" role="presentation">
-										<a aria-controls="Predictn" data-toggle="tab" href="#Predictn" role="tab">Predictn</a>
-									</li>
-								</ul><!-- First Tab-->
-								<div class="tab-content">
-									<!--End-->
-									<!-- Tab panes -->
-									<div class="tab-pane fade in active" id="Discovery" role="tabpanel">
-										<div class="tree well">
+								<ngb-tabset>
+									<ngb-tab title="Discovery">
+										<ng-template ngbTabContent>
+											<p>Discovery Content</p>
+										</ng-template>
+									</ngb-tab>
+									<ngb-tab>
+										<ng-template ngbTabTitle>Prescriptn</ng-template>
+										<ng-template ngbTabContent>Prescriptn content
 											
-										</div>
-									</div>
-									<div class="tab-pane fade" id="Prescriptn" role="tabpanel">
-										<div class="tree well ">
-											
-										</div>
-									</div>
-									<div class="tab-pane fade" id="Diagnostics" role="tabpanel">
-										<div class="tree well">
-											
-										</div>
-									</div>
-									<div class="tab-pane fade" id="Predictn" role="tabpanel">
-										<div class="tree well ">
-											
-													<ul id="child"></ul>
-												
-										</div>
-									</div>
-								</div>
+										</ng-template>
+									</ngb-tab>
+									<ngb-tab title="Diagnostics" >
+										<ng-template ngbTabContent>
+											<p>Diagnostics content</p>
+										</ng-template>
+									</ngb-tab>
+									<ngb-tab title="Predictn" >
+										<ng-template ngbTabContent>
+											<p>Predictn content</p>
+										</ng-template>
+									</ngb-tab>
+								</ngb-tabset>
 							</div>
 							<div class="com_split">
 								<span class="combine" data-toggle="collapse" id="combine"><img alt="combine" class="mCS_img_loaded" src="assets/images/combine.png" width="16px">Combine</span> <span class="split" data-toggle="collapse" id="split"><img alt="split" class="mCS_img_loaded" src="assets/images/split.png" width="16px">Split</span>
@@ -96,14 +76,12 @@
 						<div class="selection-area"></div>
 					</section>
 				</aside>
-			</div>
-		
-		</div>
+			
 	</div>
 
 
 
-	<div *dropdownMenu class="period-selection" data-animations="fadeIn">
+	<div class="dropdown-menu period-selection" data-animations="fadeIn">
 			<h3>Period Selection</h3>
 			<li><div id="popover-content" class="">
 			  <form class="form-inline" role="form">
