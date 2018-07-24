@@ -2763,3 +2763,12 @@
     border-right: 1px solid #085f55;
     outline: none;
 }
+.tab-menu .nav-item.show .nav-link, .tab-menu .nav-tabs .nav-link.active
+{
+  background: #d93637;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
