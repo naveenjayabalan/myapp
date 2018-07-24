@@ -14,8 +14,7 @@ export class MenuComponent implements OnInit {
     $('.select-period').click(function() {
       $('.period-selection').toggleClass('show-period');
       $('.popover-child').css('display', 'none');
-    });
-
+  });
   }
 
 }

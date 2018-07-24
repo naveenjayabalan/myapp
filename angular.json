@@ -26,14 +26,12 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css",
               "node_modules/jspanel4/dist/jspanel.css",
-              "node_modules/font-awesome/css/font-awesome.css",
-              "node_modules/knocout-daterangepicker/dist/daterangepicker.css"
+              "node_modules/font-awesome/css/font-awesome.css"
               
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
-              "node_modules/jspanel4/dist/jspanel.js",
-              "node_modules/knocout-daterangepicker/dist/daterangepicker.js"
+              "node_modules/jspanel4/dist/jspanel.js"
             ]
           },
           "configurations": {
