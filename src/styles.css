@@ -2750,4 +2750,16 @@
      border:none;
      margin: 2px 0 0 ;
    }
-  
+   .tab-menu .nav-tabs li a {
+
+    background: #05443d;
+    color: #fff;
+    border: none;
+        border-right-color: currentcolor;
+        border-right-style: none;
+        border-right-width: medium;
+    padding: 2px 4px !important;
+    margin: 0;
+    border-right: 1px solid #085f55;
+    outline: none;
+}
