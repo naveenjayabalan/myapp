@@ -19,3 +19,6 @@ export class MenuComponent implements OnInit {
 
 }
 export class NgbdTabsetBasic { }
+
+export class NgbdAccordionStatic {
+}

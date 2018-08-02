@@ -18,10 +18,40 @@
 							<div id="myTabs">
 								<ngb-tabset class="tab-menu">
 									<ngb-tab title="Discovery">
-										<ng-template ngbTabContent>
-											<p>Discovery Content</p>
-										</ng-template>
-									</ngb-tab>
+											<ng-template ngbTabContent>
+													<div class="nav-menu">
+														<ngb-accordion [closeOthers]="true" >
+															<ngb-panel id="static-1" >
+																	<ng-template ngbPanelTitle>
+																			<span>Parent 1 </span>
+																			<i class="pull-right fa fa-chevron-right"></i>
+																		</ng-template>
+																<ng-template ngbPanelContent>
+																		<a href="#">Child 1 <i class="pull-right fa fa-chevron-right"></i></a>
+																</ng-template>
+															</ngb-panel>
+															<ngb-panel id="static-2">
+																<ng-template ngbPanelTitle>
+																	<span>Parent 2 </span>
+																	<i class="pull-right fa fa-chevron-right"></i>
+																</ng-template>
+																<ng-template ngbPanelContent>
+																		<a href="#">Child 2 <i class="pull-right fa fa-chevron-right"></i></a>
+																</ng-template>
+															</ngb-panel>
+															<ngb-panel id="static-3">
+																	<ng-template ngbPanelTitle>
+																			<span>Parent 3</span>
+																			<i class="pull-right fa fa-chevron-right"></i>
+																		</ng-template>
+																<ng-template ngbPanelContent>
+																		<a href="#">Child 3 <i class="pull-right fa fa-chevron-right"></i></a>
+																</ng-template>
+															</ngb-panel>
+														</ngb-accordion>
+													</div>
+												</ng-template>
+											</ngb-tab>
 									<ngb-tab>
 										<ng-template ngbTabTitle>Prescriptn</ng-template>
 										<ng-template ngbTabContent>Prescriptn content
@@ -150,4 +180,6 @@
 			  </form>
 			</div>
 			</li>
-		  </div>
+			</div>
+			
+			

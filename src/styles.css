@@ -2750,6 +2750,9 @@
      border:none;
      margin: 2px 0 0 ;
    }
+
+
+   /* Angular Template CSS */
    .tab-menu .nav-tabs li a {
 
     background: #05443d;
@@ -2771,4 +2774,76 @@
   outline: none;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+}
+#myTabs div.tab-content {
+  min-height: 20px;
+  padding: 0;
+  margin-bottom: 8px;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 0;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'MyriadPro-Regular';
+  overflow: auto;
+  resize: vertical;
+  height: 270px;
+  z-index: 99;
+  border: 1px solid #e3e3e3;
+}
+.nav-menu div.card {
+  margin: 4px 3px;
+  border: 1px solid rgba(255,255,255,0.4);
+
+}
+.nav-menu div.card span
+{
+  cursor: pointer;
+  /* letter-spacing: 0.5px; */
+  text-decoration: none;
+  color: #fff;
+  line-height: 2rem;
+  cursor: pointer;
+  padding: 3px 8px;
+  font-family: 'MyriadPro-Regular';
+  font-weight: bold;
+  font-size: 13px;
+  float: left;
+}
+.nav-menu div.card h5
+{
+  margin: 0;
+}
+.nav-menu div.card button
+{
+  padding: 0;
+  display: block;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+.nav-menu div.card-body
+{
+  float: none;
+  background: none;
+  padding: 0 0 0 15px;
+  box-shadow: none;
+  min-height: auto;
+}
+.nav-menu div.card-body a
+{
+  border: 1px solid rgba(255,255,255,0.4);
+  background: none;
+  text-decoration: none;
+  display: block;
+  margin: 0 5px 5px;
+  padding: 0 5px;
+}
+.nav-menu div.card i
+{
+  color: #ffffff;
+  margin: 0.5rem 1rem 0;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus
+{
+  outline: none;
 }

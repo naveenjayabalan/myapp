@@ -31,7 +31,9 @@
     "jspanel4": "^4.0.0",
     "knockout-daterangepicker": "0.0.9",
     "ngx-bootstrap": "^3.0.1",
-    "rxjs": "^6.0.0",
+    "ngx-tree-select": "^0.13.3",
+    "rxjs": "^5.5.11",
+    "rxjs-compat": "^6.2.2",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
