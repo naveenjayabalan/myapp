@@ -14,66 +14,66 @@
 						<p id="currentval">2017</p><!-- <hr style="background-color: #fff; border-top: 2px dashed #8c8b8b;"> -->
 						
 							<button id="toggle-Period" style="display:none; font-weight: bold; color:blue; font-size: 12px;">Period Selection</button>
-						<div class="fliter-area" id="filter-area1">
-							<div id="myTabs">
-								<ngb-tabset class="tab-menu">
-									<ngb-tab title="Discovery">
-											<ng-template ngbTabContent>
-													<div class="nav-menu">
-														<ngb-accordion [closeOthers]="true" >
-															<ngb-panel id="static-1" >
-																	<ng-template ngbPanelTitle>
-																			<span>Parent 1 </span>
-																			<i class="pull-right fa fa-chevron-right"></i>
-																		</ng-template>
-																<ng-template ngbPanelContent>
-																		<a href="#">Child 1 <i class="pull-right fa fa-chevron-right"></i></a>
-																</ng-template>
-															</ngb-panel>
-															<ngb-panel id="static-2">
-																<ng-template ngbPanelTitle>
-																	<span>Parent 2 </span>
-																	<i class="pull-right fa fa-chevron-right"></i>
-																</ng-template>
-																<ng-template ngbPanelContent>
-																		<a href="#">Child 2 <i class="pull-right fa fa-chevron-right"></i></a>
-																</ng-template>
-															</ngb-panel>
-															<ngb-panel id="static-3">
-																	<ng-template ngbPanelTitle>
-																			<span>Parent 3</span>
-																			<i class="pull-right fa fa-chevron-right"></i>
-																		</ng-template>
-																<ng-template ngbPanelContent>
-																		<a href="#">Child 3 <i class="pull-right fa fa-chevron-right"></i></a>
-																</ng-template>
-															</ngb-panel>
-														</ngb-accordion>
-													</div>
-												</ng-template>
-											</ngb-tab>
-									<ngb-tab>
-										<ng-template ngbTabTitle>Prescriptn</ng-template>
-										<ng-template ngbTabContent>Prescriptn content
-											
-										</ng-template>
-									</ngb-tab>
-									<ngb-tab title="Diagnostics" >
-										<ng-template ngbTabContent>
-											<p>Diagnostics content</p>
-										</ng-template>
-									</ngb-tab>
-									<ngb-tab title="Predictn" >
-										<ng-template ngbTabContent>
-											<p>Predictn content</p>
-										</ng-template>
-									</ngb-tab>
-								</ngb-tabset>
-							</div>
-							<div class="com_split">
-								<span class="combine" data-toggle="collapse" id="combine"><img alt="combine" class="mCS_img_loaded" src="assets/images/combine.png" width="16px">Combine</span> <span class="split" data-toggle="collapse" id="split"><img alt="split" class="mCS_img_loaded" src="assets/images/split.png" width="16px">Split</span>
-							</div><input id="myAnchor" type="hidden">
+	<div class="fliter-area" id="filter-area1">
+		<div id="myTabs">
+			<ngb-tabset class="tab-menu">
+				<ngb-tab title="Discovery">
+					<ng-template ngbTabContent>
+						<div class="nav-menu tree well">
+							<ul class="tree-menu-list">
+								<li class="parent parent_li" >
+									<span title="Expand this branch">Demographic Segmntn
+										<i class="pull-right fa fa-chevron-right"></i></span>
+										<ul>
+											<li class="child" id="215" >
+											<span class="child_menu"  >Profld Indvdls<i class="hide-i pull-right fa fa-chevron-right"></i><a class="pull-right delete_selection " href="javascript:void(0)" alt=""><i class="fa fa-trash" aria-hidden="true"></i></a></span>
+											</li>
+											<li class="child" id="10165" >
+												<span class="child_menu" >Occupatn<i class="hide-i pull-right fa fa-chevron-right"></i><a class="pull-right delete_selection " href="javascript:void(0)" alt=""><i class="fa fa-trash" aria-hidden="true"></i></a></span>
+											</li>
+											<li class="child" id="10665" >
+												<span class="child_menu"  >Occupatn by Designatns<i class="hide-i pull-right fa fa-chevron-right"></i><a class="pull-right delete_selection " href="javascript:void(0)" alt=""><i class="fa fa-trash" aria-hidden="true"></i></a></span>
+											</li>
+											<li class="child" id="8054" >
+												<span class="child_menu"  >Total HHs<i class="hide-i pull-right fa fa-chevron-right"></i><a class="pull-right delete_selection " href="javascript:void(0)" alt=""><i class="fa fa-trash" aria-hidden="true"></i></a></span>
+											</li>
+											<li class="child"  >
+												<span class="child_menu">HH Size<i class="hide-i pull-right fa fa-chevron-right"></i><a class="pull-right delete_selection" href="javascript:void(0)" alt=""><i class="fa fa-trash" aria-hidden="true"></i></a></span>
+											</li>
+											<li class="child" id="14306" >
+												<span class="child_menu"   >Married Couple(s) in House<i class="hide-i pull-right fa fa-chevron-right"></i><a class="pull-right delete_selection" href="javascript:void(0)" alt=""><i class="fa fa-trash" aria-hidden="true"></i></a></span>
+											</li>
+											<li class="child" >
+												<span class="child_menu"   >House Ownrshp<i class="hide-i pull-right fa fa-chevron-right"></i><a class="pull-right delete_selection " href="javascript:void(0)" alt=""><i class="fa fa-trash" aria-hidden="true"></i></a></span>
+											</li>
+										</ul>
+								</li>
+							</ul>
 						</div>
+					</ng-template>
+				</ngb-tab>
+				<ngb-tab>
+					<ng-template ngbTabTitle>Prescriptn</ng-template>
+					<ng-template ngbTabContent>Prescriptn content
+						
+					</ng-template>
+				</ngb-tab>
+				<ngb-tab title="Diagnostics" >
+					<ng-template ngbTabContent>
+						<p>Diagnostics content</p>
+					</ng-template>
+				</ngb-tab>
+				<ngb-tab title="Predictn" >
+					<ng-template ngbTabContent>
+						<p>Predictn content</p>
+					</ng-template>
+				</ngb-tab>
+			</ngb-tabset>
+		</div>
+		<div class="com_split">
+			<span class="combine" data-toggle="collapse" id="combine"><img alt="combine" class="mCS_img_loaded" src="assets/images/combine.png" width="16px">Combine</span> <span class="split" data-toggle="collapse" id="split"><img alt="split" class="mCS_img_loaded" src="assets/images/split.png" width="16px">Split</span>
+		</div><input id="myAnchor" type="hidden">
+	</div>
 						<div class="selection-area">
 							<!-- Nav tabs -->
 							<ul class="nav nav-tabs selection-ul" role="tablist">
