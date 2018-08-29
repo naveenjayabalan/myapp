@@ -24,4 +24,8 @@ export class LoginComponent implements OnInit {
         this.routes.navigate(['services']);
     }
   }
+
+  public onLoginClick() {
+    this.routes.navigate(['./services']);
+  }
 }

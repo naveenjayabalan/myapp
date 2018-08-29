@@ -12,24 +12,34 @@
 <body>
   <app-root></app-root>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <!-- <script src="./assets/js/jspanel.js"></script>
+  <script src="./assets/js/jspanel.js"></script>
   <script>
-      jsPanel.create({
-         theme:       'primary',
-         headerTitle: 'my panel #1',
-         position:    'center-top 0 58',
-         contentSize: '450 250',
-         content:     'jnsdbgjndbvjkndkvbn klndklvn dkvn jksdj cklsn',
-         callback: function () {
-             this.content.style.padding = '20px';
-         },
-         onbeforeclose: function () {
-             return confirm('Do you really want to close the panel?');
-         }
-     });
+     
+      $(document).ready(function(){
+        if(window.location.pathname === '/services'){
+            alert('test');
+            jsPanel.create({
+                    theme:       'primary',
+                    headerTitle: 'my panel #1',
+                    position:    'center-top 0 58',
+                    contentSize: '450 250',
+                    content:     'jnsdbgjndbvjkndkvbn klndklvn dkvn jksdj cklsn',
+                    callback: function () {
+                        this.content.style.padding = '20px';
+                    },
+                    onbeforeclose: function () {
+                        return confirm('Do you really want to close the panel?');
+                    }
+                });
+        }
+      });
+
+       $(window).on('hashchange', function(e){
+            alert("test2");
+        });
    
     
-   </script> -->
+   </script>
    
 </body>
 </html>
