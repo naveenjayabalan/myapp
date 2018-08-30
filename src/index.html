@@ -13,11 +13,15 @@
   <app-root></app-root>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="./assets/js/jspanel.js"></script>
+  <script src="https://raw.githubusercontent.com/cowboy/jquery-hashchange/v1.3/jquery.ba-hashchange.min.js"></script>
   <script>
      
       $(document).ready(function(){
-        if(window.location.pathname === '/services'){
-            alert('test');
+       
+        
+      });
+      if(location.pathname == '/services'){
+            // alert('test1');
             jsPanel.create({
                     theme:       'primary',
                     headerTitle: 'my panel #1',
@@ -32,12 +36,18 @@
                     }
                 });
         }
-      });
+      
+        var currentURL = window.location.href;
+        // alert(currentURL);
 
-       $(window).on('hashchange', function(e){
-            alert("test2");
-        });
-   
+
+        var currentURL = $(location).attr("href");
+        // alert(currentURL);
+
+
+        var currentURL = window.location;
+        // alert(currentURL);
+    
     
    </script>
    
